@@ -7,17 +7,8 @@ import {
 import Icon from 'react-native-vector-icons/Ionicons';
 
 class DetailsScreen extends React.Component {
-  static navigationOptions = {
-    headerTitle: 'Details',
-    drawerLabel: 'Details',
-    drawerIcon: ({ tintColor }) => (
-      <Icon
-        name={'ios-book'}
-        size={20}
-        style={{ color: tintColor }}
-      />
-    )
-  };
+  static navigationOptions = { title: 'Details' };
+
   render() {
     const { navigate, state } = this.props.navigation;
     const { user } = state.params;

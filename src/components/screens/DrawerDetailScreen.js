@@ -18,14 +18,6 @@ class DrawerDetailScreen extends React.Component {
           style={{padding: 10, color: '#007AFF'}}
           onPress={()=>navigation.navigate('DrawerToggle')}
         />
-      ),
-      drawerLabel: 'Drawer詳細',
-      drawerIcon: ({ tintColor }) => (
-        <Icon
-          name={'ios-person'}
-          size={20}
-          style={{ color: tintColor }}
-        />
       )
     };
   };

@@ -7,25 +7,8 @@ import {
 import Icon from 'react-native-vector-icons/Ionicons';
 
 class ConfigScreen extends React.Component {
-  static navigationOptions = {
-    title: '設定',
-    tabBarLabel: '設定',
-    tabBarIcon: ({ tintColor, focused }) => (
-      <Icon
-        name={'ios-cog'}
-        size={26}
-        style={{ color: tintColor }}
-      />
-    ),
-    drawerLabel: '設定',
-    drawerIcon: ({ tintColor }) => (
-      <Icon
-        name={'ios-cog'}
-        size={20}
-        style={{ color: tintColor }}
-      />
-    )
-  };
+  static navigationOptions = { title: '設定' };
+
   render() {
     return (
       <View style={styles.container}>

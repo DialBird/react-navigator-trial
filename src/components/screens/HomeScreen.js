@@ -19,18 +19,10 @@ class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return {
       title: 'ホーム',
-      tabBarLabel: 'ホーム',
-      tabBarIcon: ({ tintColor, focused }) => (
-        <Icon
-          name={'ios-home'}
-          size={26}
-          style={{ color: tintColor }}
-        />
-      ),
       headerRight: (
         <Button
           title='Detail'
-          onPress={() => navigation.navigate('Details', { user: 'kei' })}
+          onPress={() => navigation.navigate('DrawDetails', { user: 'kei' })}
         />
       ),
       headerLeft: (
@@ -39,14 +31,6 @@ class HomeScreen extends React.Component {
           size={30}
           style={{padding: 20, color: '#007AFF'}}
           onPress={()=>navigation.navigate('DrawerToggle')}
-        />
-      ),
-      drawerLabel: 'Home',
-      drawerIcon: ({ tintColor }) => (
-        <Icon
-          name={'ios-home'}
-          size={20}
-          style={{ color: tintColor }}
         />
       )
     }
